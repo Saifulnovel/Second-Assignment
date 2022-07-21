@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Kanit', sans-serif;
+}
+/* header design */
+
+.banner{
+background:  #A25B5B;
+border-radius: 30px;
+display: flex;
+width: 80%;
+margin: 50px auto;
+justify-content: space-around;
+align-items: center;
+
+}
+.banner img{
+    width: 25%;
+    position: relative;
+    animation: topslide 2s ease-in-out 1s;
+}
+
+@keyframes topslide {
+    from {
+    top: -300px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+.banner-text{
+    color: #ffff;
+    margin-left: 107px;
+    margin-top: 110px;
+}
+.banner-text h1{
+    font-size: 70px;
+}
+.banner-text p{
+margin-bottom: 2em;
+}
+.anchor-button a{
+    text-decoration: none;
+   
+  background-color: #CC9C75;
+  color: black;
+    width: 140px;
+    height: 40px;
+    padding: 10px 20px;
+border-radius: 5px;
+font-size: 15px;
+text-align: center;
+font-weight: 400;
+}
+
+
+
+
+
+/*-------------------------------- main of index1-------------------------------------- */
+.container{
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    margin-top: 130px;
+    width: 80%;
+    margin: auto;
+}
+.side-bar{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #A25B5B;
+    border-radius: 1rem;
+    height: 100%;
+    width: 20%;
+}
+.side-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    justify-content: space-around;
+    background-color: #ffff;
+color: #000000;
+font-size: 16px;
+border-radius: 1em;
+height: 55px;
+width: 12em;
+cursor: pointer;
+border: none;
+
+
+}
+.Blogs{
+    background-color:#CC9C75;
+}
+.side-bar a{
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px white;
+}
+.fixture, .news-list {
+    display:grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 2em;
+
+
+}
+.match{
+    display: flex;
+    flex-direction: column;
+width: 20em;
+height: 224px;
+border: 1px solid lightgray;
+align-items: center;
+border-radius: 10px;
+
+
+}
+.flags{
+    margin-top: 34px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+}
+.match-info{
+    margin-top: 10px;
+    text-align: center;
+}
+.match-info h2{
+    padding: 10px;
+    font-size: 20px;
+}
+
+/*-------------------------------------- main of index------------------------------- */
+
+.news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #f5f5f589;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(28, 17, 17, 0.21);
+}
+
+.news img {
+    width:100%;
+}
+
+.news .transfer {
+    display: flexbox;
+    width: 100px;
+    color: #fc8571;
+    background-color: #f7f8fa;
+    margin-top: 1.5rem;
+    padding: 5px;
+}
+
+.news h4 {
+    padding: 1em 0;
+}
+
+.info span {
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+/*-------------------------------------
+=========================== only for tab 
+----------------------- --------------*/
+
+.for-tab button{
+    display: none;
+    border: none;
+    padding: 1em 3em;
+    margin: 20px auto;
+}
+
+/*--------------------------------
+================= footer-desdign 
+---------------------------------*/
+
+.footer{
+    margin-top: 130px;
+    height: 300px;
+    background-color: #000000;
+    text-align: center;
+
+}
+.footer-title h2{
+    color: #CC9C75;
+}
+hr{
+    color: #CC9C75;
+    width: 80%;
+    margin: 10px auto;
+}
+.footer-item{
+    margin: 20px;
+    padding: 1em;
+}
+.footer .contacts a {
+    color: rgb(118, 124, 122);
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.footer .contacts a:hover {
+    color: #CC9C75;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 6em;
+}
+
+.fa-brands {
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    border: 2px solid #CC9C75;
+    border-radius: 25%;
+    color: #CC9C75;
+}
+
+.fa-brands:hover {
+    border: none;
+    border-radius: 25%;
+    font-size: 30px;
+}
+
+.footer .links a {
+    color: rgb(118, 124, 122);
+    text-decoration: none;
+}
+/*-----------------
+ footer ends 
+------------------ */
+
+/* ---------------------
+==========responsive for Tab
+-------------------------- */
+
+@media screen and (max-width: 778px){
+.banner{
+    
+    width: 90%;
+
+}
+.banner img{
+    width: 30%;
+}
+.banner-text{
+    margin: auto;
+}
+.banner-text h1{
+    font-size:1em;
+
+}
+ .container {
+flex-direction: column;
+
+ }
+.side-bar{
+    flex-direction: row;
+    width: 100%;
+    background-color: transparent;
+
+}
+    .side-items {
+        background-color: #f7f8fa;
+        border-radius: 1em;
+        cursor: pointer;
+        border: 2px solid lightgray;
+        width: 11em;
+    }
+    .Blogs {
+        background-color:#A25B5B;
+    }
+    .news-list{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .fixture{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .match{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    }
+
+    .for-tab button {
+        display: block;
+        background-color: #A25B5B;
+        border-radius: 5px;
+    }
+    .for-tab:hover button{
+        background-color: rgb(211, 203, 203);
+        font-size: 20px;
+
+    }
+}
+    
+
+
+/* tab style ends  */
+
+/* ------------------------------------
+===========big screen phone style====== 
+--------------------------------------*/
+
+  @media screen and (max-width: 520px) {
+.banner{
+    flex-direction: column;
+    justify-content: center;
+}
+.banner-text{
+    text-align: center;
+}
+
+    .banner img {
+        width: 40%;
+    }
+    
+
+    .side-bar {
+       flex-direction: column;
+    }
+    .fixture{
+        grid-template-columns: 1fr;
+    }
+    .news-list{
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        height: auto;
+        width:100%;
+    }
+
+    .footer-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts {
+        gap: 1em;
+
+    }
+
+    .for-tab button {
+        display: none;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+    }
+
+} 
